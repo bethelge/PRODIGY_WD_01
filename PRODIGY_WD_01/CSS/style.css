@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #007bff, #00aaff);
+    color: white;
+    z-index: 1000;
+    transition: background 0.3s, box-shadow 0.3s;
+    padding: 10px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ffd700; /* Change to gold when hovered */
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.content {
+    margin-top: 80px; /* Offset for fixed navbar */
+    padding: 20px;
+}
+
+section {
+    height: 100vh;
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+}
+
+#home {
+    background-color: #f0f0f0;
+}
+
+#services {
+    background-color: #e0f7fa;
+}
+
+#about {
+    background-color: #f1f8e9;
+}
+
+#contact {
+    background-color: #fff3e0;
+}
+
+/* Scroll effects */
+.navbar.scrolled {
+    background: linear-gradient(90deg, #004085, #005e76);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar a.active {
+    color: #ffcc00;
+    font-weight: bold;
+    border-bottom: 2px solid #ffcc00;
+}
